@@ -23,20 +23,16 @@ Blog.init(
             type: DataTypes.DATE,
             allowNull: false,
         },
-        filename: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        post_descrip: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         blog_id: {
             type: DataTypes.INTEGER,
             references: {
                 model: 'archive',
                 key: 'id',
             },
+        },
+        post_descrip: {
+            type: DataTypes.STRING,
+            allowNull: false,
         },
     },
     {

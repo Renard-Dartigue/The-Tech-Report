@@ -14,7 +14,6 @@ router.get('/archive/:id', withAuth, async (req,res) => {
                         'title',
                         'author',
                         'post_date',
-                        'filename',
                         'post_descrip',
                     ],
                 },
